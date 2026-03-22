@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/STYLE.css">
+</head>
+<body>
+ <header>
+        <div class="logo">CyberStore</div>
+        <nav>
+            <a href="index.html" class="active">store</a>
+            <a href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+             <a href="checkout.html">checkout</a>
+        </nav>
+    </header>
+
+    <h1  class="out">CHECKINGOUT</h1>
+    <H3>BACK TO  <a href="cart.html">Cart</a></H3>
+
+    
+    <form onsubmit="return validateCheckout()">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+        <label for="phone">Phone Number:</label>
+        <input type="phone" id="name" placeholder="Enter your number" required>
+        <label for="address">DeliveryAddress:</label>
+        <textarea id="address" placeholder="Enter delivery address" required></textarea>
+        <button type="submit" class="orderbtn">PLACE ORDER</button>
+    </form>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
+

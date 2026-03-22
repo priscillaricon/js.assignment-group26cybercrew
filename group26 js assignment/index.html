@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="css/STYLE.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">CyberStore</div>
+        <nav>
+            <a href="index.html" class="active">Shop</a>
+            <a href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+             <a href="checkout.html">checkout</a>
+        </nav>
+    </header>
+
+    <main class="home">
+        <div class="hero">
+            <h1>We bring our shop to your device.</h1>
+            <h1>Discover Premium Products</h1>
+            <p>Curated collection  Fast delivery  Secure checkout</p>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn" data-category="All">All</button>
+            <button class="filter-btn" data-category="Electronics">Electronics</button>
+            <button class="filter-btn" data-category="Fashion">Fashion</button>
+            <button class="filter-btn" data-category="Books">Books</button>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search products...">
+        </div>
+
+
+        <div class="productList"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CyberStore JavaScript Assignment</p>
+    </footer>
+
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
+
